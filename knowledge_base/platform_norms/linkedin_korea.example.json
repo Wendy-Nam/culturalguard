@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "file": "linkedin_korea.json",
+    "platform": "linkedin",
+    "market": "kr",
+    "description": "LinkedIn Korea cultural norms — customize for your target market."
+  },
+  "cultural_principles": [
+    { "name": "Face Culture", "description": "Avoid content that could embarrass the writer or others", "impact": "Competitor bashing = loss of face" },
+    { "name": "Collectivism", "description": "Credit the group, not the individual", "impact": "Self-praise triggers distrust" }
+  ],
+  "safe_patterns": [
+    { "pattern": "Team achievement story", "examples": ["Our team collaborated on..."], "explanation": "Collectivism-aligned, low risk" }
+  ],
+  "avoid_patterns": [
+    { "pattern": "Competitor comparison", "examples": ["Unlike [competitor]..."], "reason": "Face culture violation" }
+  ],
+  "style_rules": ["Semi-formal to formal tone", "Humble but confident"],
+  "attribution": { "source_id": "src_market_report" }
+}

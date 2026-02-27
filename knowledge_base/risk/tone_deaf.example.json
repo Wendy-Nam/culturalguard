@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "file": "tone_deaf.json",
+    "category": "risk",
+    "risk_penalty": 0.25,
+    "description": "Socially insensitive messaging — labor exploitation, discrimination, ableism."
+  },
+  "patterns": [
+    {
+      "id": "risk_tone_001",
+      "phrase": "PLACEHOLDER_TONE_DEAF",
+      "variations": ["variation_1"],
+      "risk_score": 0.75,
+      "problematic_regions": ["kr", "global"],
+      "safe_in": [],
+      "safe_alternatives": ["safe_alternative_1"],
+      "why_problematic": "Describe the social insensitivity and why it's problematic.",
+      "attribution": { "source_id": "src_global_compliance" }
+    }
+  ]
+}

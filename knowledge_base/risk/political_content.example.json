@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "file": "political_content.json",
+    "category": "risk",
+    "risk_penalty": 0.35,
+    "description": "Political references — zero tolerance for corporate brands."
+  },
+  "patterns": [
+    {
+      "id": "risk_pol_001",
+      "phrase": "PLACEHOLDER_POLITICAL_PHRASE",
+      "variations": ["variation_1"],
+      "risk_score": 0.95,
+      "problematic_regions": ["kr", "jp", "us", "global"],
+      "safe_in": [],
+      "safe_alternatives": [],
+      "why_problematic": "Corporate political endorsement alienates customers and violates brand neutrality.",
+      "attribution": { "source_id": "src_global_compliance" }
+    }
+  ]
+}

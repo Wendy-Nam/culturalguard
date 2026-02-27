@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "file": "self_praise.json",
+    "category": "risk",
+    "risk_penalty": 0.20,
+    "description": "Unsubstantiated superlatives and self-congratulatory claims."
+  },
+  "patterns": [
+    {
+      "id": "risk_praise_001",
+      "phrase": "PLACEHOLDER_SELF_PRAISE",
+      "variations": ["variation_1", "variation_2"],
+      "risk_score": 0.70,
+      "problematic_regions": ["kr", "jp"],
+      "safe_in": [],
+      "safe_alternatives": ["trusted by N+ teams", "rated X/5 by users"],
+      "why_problematic": "Superlatives without data are seen as arrogance in humility-valuing cultures.",
+      "attribution": { "source_id": "src_market_report" }
+    }
+  ]
+}

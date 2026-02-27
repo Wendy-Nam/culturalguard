@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "file": "pii_patterns.json",
+    "category": "risk",
+    "risk_penalty": 0.30,
+    "description": "PII detection patterns using regex — email, phone, SSN, credit card."
+  },
+  "patterns": [
+    {
+      "id": "risk_pii_001",
+      "phrase": "email address",
+      "regex": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
+      "risk_score": 0.90,
+      "problematic_regions": ["kr", "jp", "us", "global"],
+      "safe_in": [],
+      "safe_alternatives": ["[REDACTED_EMAIL]"],
+      "why_problematic": "Personal email exposure violates privacy laws.",
+      "attribution": { "source_id": "src_global_compliance" }
+    },
+    {
+      "id": "risk_pii_002",
+      "phrase": "phone number",
+      "regex": "(\\+?\\d{1,3}[-.\\s]?)?\\(?\\d{2,4}\\)?[-.\\s]?\\d{3,4}[-.\\s]?\\d{4}",
+      "risk_score": 0.85,
+      "problematic_regions": ["kr", "jp", "us", "global"],
+      "safe_in": [],
+      "safe_alternatives": ["[REDACTED_PHONE]"],
+      "why_problematic": "Phone number in public post — privacy law violation.",
+      "attribution": { "source_id": "src_global_compliance" }
+    }
+  ]
+}

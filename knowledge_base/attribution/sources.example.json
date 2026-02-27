@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "file": "sources.json",
+    "category": "attribution",
+    "description": "All KB sources. Every risk/cultural entry references one of these by source_id."
+  },
+  "sources": [
+    {
+      "id": "src_brand_guide",
+      "name": "YourBrand Internal Brand Guidelines",
+      "type": "internal_policy",
+      "trust_score": 0.95,
+      "last_verified": "2026-02-01"
+    },
+    {
+      "id": "src_market_report",
+      "name": "Target Market Cultural Norms Report",
+      "type": "industry_report",
+      "trust_score": 0.88,
+      "last_verified": "2025-12-10"
+    }
+  ]
+}

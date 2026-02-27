@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "file": "religious_content.json",
+    "category": "risk",
+    "risk_penalty": 0.30,
+    "description": "Religious references — corporate neutrality required."
+  },
+  "patterns": [
+    {
+      "id": "risk_rel_001",
+      "phrase": "PLACEHOLDER_RELIGIOUS_PHRASE",
+      "variations": ["variation_1"],
+      "risk_score": 0.85,
+      "problematic_regions": ["global"],
+      "safe_in": [],
+      "safe_alternatives": ["grateful for this opportunity", "thankful for the team's work"],
+      "why_problematic": "Religious framing in corporate comms excludes non-religious audiences.",
+      "attribution": { "source_id": "src_global_compliance" }
+    }
+  ]
+}

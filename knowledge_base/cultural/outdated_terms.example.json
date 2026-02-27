@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "file": "outdated_terms.json",
+    "category": "cultural",
+    "description": "Expired or outdated terms — using these signals brand is out of touch."
+  },
+  "terms": [
+    {
+      "id": "out_001",
+      "term": "PLACEHOLDER_TERM",
+      "meaning": "Description of what this term means",
+      "peak_year": 2020,
+      "status": "expired",
+      "risk_level": "medium",
+      "risk_score": 0.40,
+      "reason": "Explain why this term is outdated.",
+      "alternatives": ["modern_alternative_1", "modern_alternative_2"],
+      "attribution": { "source_id": "src_market_report" }
+    }
+  ]
+}

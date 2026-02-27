@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "file": "brand_guide.json",
+    "category": "brand",
+    "description": "Brand identity, tone, naming rules, and sensitive topics."
+  },
+  "brand_identity": {
+    "name": "YourBrand",
+    "tagline": "Your Tagline Here",
+    "industry": "B2B/B2C SaaS",
+    "personality": ["Innovative", "Trustworthy", "Human-first"]
+  },
+  "tone_and_manner": {
+    "core": "Confident but Humble",
+    "do": [
+      "Use data-backed claims with specific numbers",
+      "Credit the team and community"
+    ],
+    "dont": [
+      "Name competitors or compare directly",
+      "Use superlatives without evidence"
+    ]
+  },
+  "naming_rules": {
+    "correct": ["YourBrand"],
+    "incorrect": ["yourbrand", "Your Brand", "YOURBRAND"],
+    "product_names": ["YourBrand Product A"]
+  },
+  "sensitive_topics": {
+    "allowed_with_care": ["AI ethics", "Data privacy"],
+    "off_limits": ["Politics", "Religion", "Competitor bashing"]
+  },
+  "attribution": { "source_id": "src_brand_guide" }
+}

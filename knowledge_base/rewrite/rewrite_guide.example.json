@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "file": "rewrite_guide.json",
+    "category": "rewrite",
+    "description": "Guide for diagnosis-first rewriting with 5-axis classification."
+  },
+  "axes": {
+    "formality": { "scale": ["casual", "semi-formal", "formal"], "description": "Level of language formality" },
+    "agency": { "scale": ["team-credit", "shared-credit", "self-credit"], "description": "Who gets credit for achievements" },
+    "evidence": { "scale": ["qualitative", "mixed", "data-driven"], "description": "Type of supporting evidence" },
+    "competition_framing": { "scale": ["zero-mention", "industry-growth", "market-position"], "description": "How competitors are referenced (or not)" },
+    "emotional_tone": { "scale": ["understated", "warm", "enthusiastic"], "description": "Emotional register of the content" }
+  },
+  "rewrite_rules": [
+    "Diagnose FIRST: Name each problematic phrase and explain WHY it fails in the target culture",
+    "Generate 3-5 alternative versions — each must be a COMPLETE, ready-to-post sentence",
+    "Classify each version on all 5 axes",
+    "Add why_safe: one sentence explaining why this version avoids the diagnosed risk",
+    "Versions should meaningfully differ — not just vary one word"
+  ],
+  "anti_patterns": [
+    "Merely softening while keeping the same frame",
+    "Generic empty phrases with no concrete detail",
+    "Rewrites that are vaguer than the original"
+  ],
+  "example": {
+    "input": "PLACEHOLDER: Our product crushed the competition this quarter!",
+    "market": "kr",
+    "platform": "linkedin",
+    "diagnosis": [
+      { "phrase": "crushed the competition", "why": "Violent metaphor + competitor comparison = culturally inappropriate" }
+    ],
+    "rewrites": [
+      {
+        "version": 1,
+        "text": "This quarter, our team shipped 3 major features that helped 200+ teams.",
+        "axes": { "formality": "semi-formal", "agency": "team-credit", "evidence": "data-driven", "competition_framing": "zero-mention", "emotional_tone": "warm" },
+        "why_safe": "No competitor mention, team-credited, backed by specific data."
+      }
+    ]
+  }
+}

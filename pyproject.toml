@@ -1,0 +1,11 @@
+[tool.pyright]
+typeCheckingMode = "basic"
+reportMissingImports = "none"
+reportImplicitRelativeImport = "none"
+reportMissingTypeArgument = "none"
+reportUnknownMemberType = "none"
+reportUnknownParameterType = "none"
+reportUnknownVariableType = "none"
+reportUnknownArgumentType = "none"
+reportUnknownLambdaType = "none"
+reportUnknownCallResult = "none"

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "file": "safety_rules.json",
+    "category": "safety",
+    "description": "Prompt injection detection, harmful content filter, PII redaction, brand compliance."
+  },
+  "prompt_injection": {
+    "action": "BLOCK_AND_ESCALATE",
+    "patterns": [
+      { "id": "inj_001", "pattern": "ignore previous instructions", "severity": "critical" },
+      { "id": "inj_002", "pattern": "you are now", "severity": "critical" },
+      { "id": "inj_003", "pattern": "forget your instructions", "severity": "critical" }
+    ]
+  },
+  "harmful_content": {
+    "action": "REJECT",
+    "categories": [
+      { "id": "harm_001", "category": "hate_speech", "action": "REJECT_IMMEDIATELY" },
+      { "id": "harm_002", "category": "violence_promotion", "action": "REJECT_IMMEDIATELY" }
+    ]
+  },
+  "pii_redaction": {
+    "action": "REDACT_WITH_PLACEHOLDER",
+    "rules": [
+      "Replace detected PII with [REDACTED]",
+      "Never echo PII in analysis or rewrites"
+    ]
+  },
+  "brand_compliance": {
+    "action": "WARN",
+    "checks": [
+      "Verify brand name spelling",
+      "Check off-limits topics from brand guide"
+    ]
+  },
+  "attribution": { "source_id": "src_global_compliance" }
+}

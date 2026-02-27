@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "file": "trending_kr_2026q1.json",
+    "category": "cultural",
+    "market": "kr",
+    "ttl_days": 90,
+    "valid_until": "2026-04-30",
+    "description": "Trending phrases — use with caution, check TTL before posting."
+  },
+  "usage_guidelines": {
+    "safe_use": "Only if the phrase fits the brand tone AND has not expired",
+    "warning": "Trending phrases have a TTL. Using expired trends signals brand is out of touch."
+  },
+  "terms": [
+    {
+      "id": "trend_001",
+      "phrase": "PLACEHOLDER_TREND",
+      "meaning": "Describe the trending phrase meaning",
+      "valid_until": "2026-04-30",
+      "status": "active",
+      "freshness": "current",
+      "usage_note": "Describe safe usage context.",
+      "attribution": { "source_id": "src_market_report" }
+    }
+  ]
+}

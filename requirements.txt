@@ -1,0 +1,34 @@
+# CulturalGuard Agent - Requirements
+# Azure AI Foundry SDK + MCP Integration + Streamlit UI
+
+# Azure AI Foundry SDK
+azure-ai-projects>=1.0.0
+azure-ai-agents>=1.1.0
+azure-identity>=1.25.0
+
+# Streamlit UI
+streamlit>=1.40.0
+
+# Translation (demo)
+deep-translator>=1.11.0
+
+# UI demo automation
+playwright>=1.46.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# Web search (for verify_cultural_trend)
+duckduckgo-search>=7.0.0
+# Azure AI Foundry SDK + MCP Integration
+
+# Azure AI Foundry SDK
+azure-ai-projects>=1.0.0
+azure-ai-agents>=1.1.0
+azure-identity>=1.25.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# Web search (for verify_cultural_trend)
+duckduckgo-search>=7.0.0

@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "file": "violent_metaphor.json",
+    "category": "risk",
+    "risk_penalty": 0.25,
+    "description": "Violent or aggressive language used metaphorically in business contexts."
+  },
+  "patterns": [
+    {
+      "id": "risk_viol_001",
+      "phrase": "PLACEHOLDER_VIOLENT_METAPHOR",
+      "variations": ["variation_1"],
+      "risk_score": 0.80,
+      "problematic_regions": ["kr", "jp"],
+      "safe_in": ["us"],
+      "safe_alternatives": ["exceeded targets", "delivered strong results"],
+      "why_problematic": "Violence metaphors signal aggression and disrespect in certain corporate cultures.",
+      "attribution": { "source_id": "src_market_report" }
+    }
+  ]
+}

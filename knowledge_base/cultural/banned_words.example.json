@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "file": "banned_words.json",
+    "category": "cultural",
+    "description": "Banned words — corporate jargon, discriminatory language, or culturally inappropriate terms."
+  },
+  "words": [
+    {
+      "id": "ban_001",
+      "word": "PLACEHOLDER_WORD",
+      "risk_score": 0.50,
+      "category": "corporate_jargon",
+      "alternatives": ["alternative_1", "alternative_2"],
+      "reason": "Describe why this word is problematic in your context.",
+      "attribution": { "source_id": "src_brand_guide" }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "file": "global.json",
+    "platform": "all",
+    "market": "global",
+    "description": "Universal platform norms — applies as baseline across all markets."
+  },
+  "cultural_principles": [
+    { "name": "Brand Consistency", "description": "Tone and naming must match brand guide across all platforms", "impact": "Inconsistent branding erodes trust" },
+    { "name": "Legal Compliance", "description": "Respect local privacy laws (GDPR, PIPA, APPI, etc.)", "impact": "PII exposure creates legal liability" }
+  ],
+  "safe_patterns": [
+    { "pattern": "Value-first content", "examples": ["3 tips we learned from..."], "explanation": "Universally positive engagement pattern" }
+  ],
+  "avoid_patterns": [
+    { "pattern": "PII in public posts", "examples": ["Contact john@email.com"], "reason": "Privacy law violation" }
+  ],
+  "style_rules": ["Adapt formality to platform", "Inclusive language always"],
+  "attribution": { "source_id": "src_global_compliance" }
+}

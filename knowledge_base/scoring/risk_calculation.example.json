@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "file": "risk_calculation.json",
+    "category": "scoring",
+    "description": "Risk scoring formula, penalties, thresholds, and market-specific adjustments."
+  },
+  "scoring_formula": {
+    "description": "final = (db_score × db_weight) + (llm_score × llm_weight) + penalty_sum",
+    "db_weight": 0.4,
+    "llm_weight": 0.6,
+    "db_score_method": "Max risk_score among matched patterns. If 3+ matches, average top 3.",
+    "llm_score_method": "LLM contextual judgment 0.0-1.0",
+    "score_cap": 1.0
+  },
+  "penalties": {
+    "aggressive_competition": { "penalty": 0.25, "description": "Direct/indirect competitor mention" },
+    "violent_metaphor": { "penalty": 0.25, "description": "Violent imagery" },
+    "self_praise": { "penalty": 0.20, "description": "Unsubstantiated superlatives" },
+    "tone_deaf_messaging": { "penalty": 0.25, "description": "Socially insensitive content" },
+    "political_content": { "penalty": 0.35, "description": "Political content — zero tolerance" },
+    "religious_content": { "penalty": 0.30, "description": "Religious content — corporate neutrality" },
+    "pii_exposure": { "penalty": 0.30, "description": "PII leak — legal top priority" },
+    "expired_trend": { "penalty": 0.10, "description": "Expired slang" },
+    "banned_word": { "penalty": 0.05, "description": "Corporate jargon or discriminatory term (per word)" },
+    "platform_norm_violation": { "penalty": 0.15, "description": "Platform tone/style mismatch" },
+    "brand_guideline_violation": { "penalty": 0.10, "description": "Brand name/topic rule violation" }
+  },
+  "decision_thresholds": {
+    "APPROVE": { "range": "0.0-0.3", "action": "Auto-approve. Safe to publish." },
+    "REVIEW_SUGGESTED": { "range": "0.31-0.5", "action": "Provide suggestions. Publish after review." },
+    "REVISE_REQUIRED": { "range": "0.51-0.7", "action": "Must revise before publish." },
+    "ESCALATE_TO_HUMAN": { "range": "0.71-1.0", "action": "Escalate to human reviewer." }
+  },
+  "market_adjustments": {
+    "kr": { "aggressive_competition_multiplier": 1.5, "reason": "Face culture sensitivity" },
+    "jp": { "aggressive_competition_multiplier": 2.0, "self_praise_multiplier": 1.5, "reason": "Wa + Kenson" },
+    "us": { "tone_deaf_multiplier": 1.3, "reason": "DEI sensitivity" }
+  },
+  "attribution": { "source_id": "src_scoring_engine" }
+}

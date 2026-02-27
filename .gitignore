@@ -1,0 +1,68 @@
+# ============================================================================
+# CulturalGuard - .gitignore
+# ============================================================================
+
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.local
+.env.production
+*.env
+
+# =========================
+# Knowledge Base (SENSITIVE)
+# Real data files are gitignored — only *.example.json are tracked.
+# Copy *.example.json → *.json and populate with your own data.
+# =========================
+knowledge_base/**/*.json
+!knowledge_base/**/*.example.json
+
+# =========================
+# Reports (contain analyzed content)
+# =========================
+reports/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# =========================
+# Testing / Coverage
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# Misc
+# =========================
+*.log
+*.tmp
+*.bak
